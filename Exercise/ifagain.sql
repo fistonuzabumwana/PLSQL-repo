@@ -1,0 +1,29 @@
+DECLARE
+  V_OUT  VARCHAR(50);
+  V_NUM  NUMBER:=8;
+  V_NAME VARCHAR(100):='XYZ';
+BEGIN
+  IF V_NUM = 2 THEN
+    NULL;
+  ELSIF V_NUM = 8 THEN
+    V_OUT := 'The value: '
+             ||V_NUM;
+    DBMS_OUTPUT.PUT_LINE(V_OUT);
+    ELSE
+DBMS_OUTPUT.PUT_LINE('This is the default print');
+
+END IF;
+
+IF V_NAME = '123' THEN
+NULL;
+
+ELSIF V_NAME = 'XYZ' THEN
+DBMS_OUTPUT.PUT_LINE(V_NAME);
+
+ELSE
+DBMS_OUTPUT.PUT_LINE('This is the default print');
+
+END IF;
+
+END;
+/
