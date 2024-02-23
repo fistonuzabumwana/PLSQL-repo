@@ -24,6 +24,6 @@ EXCEPTION
   WHEN no_data_found THEN
   DBMS_OUTPUT.PUT_LINE('invali ID ');
   WHEN OTHERS THEN
-    DBMS_OUTPUT.PUT_LINE('Unexpected error: '|| SQLERRM);
+    DBMS_OUTPUT.PUT_LINE('Unexpected error');
 END;
 /
